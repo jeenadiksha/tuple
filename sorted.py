@@ -1,8 +1,10 @@
-tpl = (1,2,3,4,5,6,7,8)
+tpl = eval(input("Enter a tuple :"))
 n = len(tpl)
-half = n // 2
-
-if(n == sorted()):
+mid = n // 2
+if(n % 2 == 1):
+    mid += 1
+half = tpl[:mid]
+if(sorted(half) == list(tpl[:mid])):
     print("The first half of the tuple is sorted ")
 else:
     print("The first half of the tuple is not sorted ")
